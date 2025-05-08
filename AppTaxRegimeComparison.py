@@ -243,6 +243,12 @@ st.write(f"**Recommendation**: {'New Regime' if difference > 0 else 'Old Regime'
 
 # Add a note with tooltip for 80CCD(2)
 st.markdown("""
-    **Note**: The 80CCD(2) deduction in the new regime is calculated as 10% of basic salary (assumed 40% of gross salary).
-    <span style='cursor: pointer; color: blue;' title='80CCD(2) allows a deduction for the employer’s contribution to the employee’s NPS account, up to 10% of salary (basic + DA). This is available in both old and new regimes. Learn more: https://cleartax.in/s/section-80ccd'>[?]</span>
+- **Gross Annual Salary**: Your total annual salary before any deductions or exemptions.
+- **HRA/Home Loan Exemption**: HRA exemption is available under the old regime for salaried individuals paying rent. It is the least of: actual HRA received, rent paid minus 10% of salary, or 50% of salary (metro cities) / 40% (non-metro). Learn more at [ClearTax HRA Guide](https://cleartax.in/s/hra-house-rent-allowance).
+- **80C Deduction**: Allows a deduction of up to ₹1,50,000 for investments in specified instruments like PPF, EPF, life insurance premiums, ELSS, and tuition fees. Learn more at [Income Tax Department - Section 80C](https://incometaxindia.gov.in/Pages/Acts/Section-80C.aspx).
+- **80D Deduction**: Provides a deduction for health insurance premiums paid for self, family, or parents. The limit is ₹25,000 for self/family and an additional ₹50,000 for senior citizen parents. Learn more at [ET Money - Section 80D](https://www.etmoney.com/learn/income-tax/section-80d-deduction-for-medical-insurance-premium/).
+- **80CCD(1B) Deduction**: Offers an additional deduction of up to ₹50,000 for contributions to the National Pension System (NPS) over and above the 80C limit. Learn more at [Tax2Win - Section 80CCD(1B)](https://tax2win.in/guide/section-80ccd).
+- **80CCD(2) Deduction**: Allows a deduction for the employer’s contribution to the employee’s NPS account, up to 10% of salary (basic + DA). This is available in both old and new regimes and is calculated as 10% of basic salary (assumed 40% of gross salary). Learn more at [ClearTax - Section 80CCD(2)](https://cleartax.in/s/section-80ccd).
+- **Standard Deduction**: A fixed deduction allowed from gross salary to reduce taxable income. Default for FY 2025-26 is ₹50,000 in the old regime and ₹75,000 in the new regime. Learn more at [Income Tax Department - Standard Deduction](https://incometaxindia.gov.in/Pages/FAQs/Standard-deduction.aspx).
+- **Tax Slabs**: Tax slabs define the income ranges and corresponding tax rates under each regime. You can customize these slabs or use the defaults for FY 2025-26. Learn more at [Income Tax Department - Tax Calculator](https://incometaxindia.gov.in/Pages/tools/tax-calculator.aspx).
 """, unsafe_allow_html=True)
